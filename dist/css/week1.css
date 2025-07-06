@@ -71,7 +71,7 @@ table {
 }
 
 .header {
-  background-image: url("/dist/imgs/about.png");
+  background-image: url("/dist/about.png");
   background-repeat: no-repeat;
   background-position: center;
   padding: 150px 0;
