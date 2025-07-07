@@ -46,3 +46,58 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+}
+.h1{
+    font-size: 40px;
+    color: #FFFFFF;
+}
+.h3{
+    font-size: 28px;
+    color: #FFFFFF;
+}
+.h5{
+    font-size: 20px;
+}
+.primary-color{
+    color: #57A203;
+}
+.text-center{
+    text-align: center;
+}
+.container{
+    width: 856px;
+    margin: 0 auto;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-64{
+    margin-bottom: 64px;
+}
+.mb-4{
+    margin-bottom: 4px;
+}
+.mb-12{
+    margin-bottom: 12px;
+}
+.fz-md{
+    line-height: 1.5;
+    font-weight: 400;
+}
+.header{
+    background-image: url('hero.png');
+    padding: 151px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slogan{
+    background-color: #F5FEE7;
+    border-radius: 4px;
+    padding: 32px;
+}
