@@ -68,8 +68,10 @@ img{
 	text-align: center;
 	padding: 48px 0;
 	background-color: pink;
+	line-height: 1.5;
 }
 .block{
 	padding-left: 20px;
 	padding-right: 20px;
+	margin-bottom: 24px;
 }
