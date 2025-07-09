@@ -1,4 +1,6 @@
-/* 引入Icon */
+/* 引入字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+/* 引入ICON */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -48,6 +50,16 @@ table {
 *::after {
   box-sizing: border-box;
 }
+/* 顏色 */
+:root{
+    --primary-400:#57A203;
+    --primary-100:#F5FEE7;
+    --neutral:#FFFFFF;
+    --neutral-900:#212529;
+    --neutral-300:#DEE2E6;
+    --neutral-100:#F8F9FA;
+    --Neutral-600:#6C757D;
+}
 /* 基本樣式 */
 img{
     display: block;
@@ -55,10 +67,24 @@ img{
 a{
     text-decoration: none;
 }
+body{
+	font-family: "Noto Sans TC", sans-serif;
+}
 /* 通用樣式 */
 .container{
     margin: 0 auto;
     max-width: 1296px;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: -12px;
+	padding-right: -12px;
+}
+.col{
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100% / 12);
 }
 .d-flex{
     display: flex;
@@ -68,6 +94,9 @@ a{
 }
 .aic{
     align-items: center;
+}
+.flex-wrap{
+	flex-wrap: wrap;
 }
 /* 頁面 */
 .nav{
