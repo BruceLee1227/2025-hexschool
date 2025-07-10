@@ -57,9 +57,14 @@ table {
     --primary-100:#F5FEE7;
     --neutral:#FFFFFF;
     --neutral-900:#212529;
+	--neutral-200:#E8FEC5;
     --neutral-300:#DEE2E6;
     --neutral-100:#F8F9FA;
-    --Neutral-600:#6C757D;
+    --neutral-600:#6C757D;
+	--neutral-500:#ADB5BD;
+}
+.primary-color{
+	background-color: var(--neutral-200);
 }
 /* 基本樣式 */
 img{
@@ -74,6 +79,8 @@ a{
 }
 body{
 	font-family: "Noto Sans TC", sans-serif;
+	line-height: 1.2;
+	letter-spacing: 0.05em;
 }
 /* 通用樣式 */
 .container{
@@ -86,11 +93,11 @@ body{
 	margin-right: -12px;
 	margin-left: -12px;
 }
-.col{
+/* .col{
 	padding-left: 12px;
 	padding-right: 12px;
 	width: calc(100% / 12);
-}
+} */
 .col-2{
 	padding-left: 12px;
 	padding-right: 12px;
@@ -101,11 +108,23 @@ body{
 	padding-right: 12px;
 	width: calc(100% / 12 * 4);
 }
+.col-5{
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100% / 12 * 5);
+}
+.col-7{
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100% / 12 * 7);
+}
+
 .col-10{
 	padding-left: 12px;
 	padding-right: 12px;
 	width: calc(100% / 12 *10);
 }
+
 .d-flex{
     display: flex;
 }
@@ -121,6 +140,16 @@ body{
 .flex-wrap{
 	flex-wrap: wrap;
 }
+/* 文字樣式 */
+.text-center{
+	text-align: center;
+}
+.text-color{
+	color: var(--primary-400);
+}
+.del{
+	color: var(--neutral-500);
+}
 .py-8{
 	padding-top: 8px;
 	padding-bottom: 8px;
@@ -128,6 +157,10 @@ body{
 .py-12{
 	padding-top: 12px;
 	padding-bottom: 12px;
+}
+.py-24{
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 .py-16{
 	padding-top: 16px;
@@ -137,8 +170,15 @@ body{
 	padding-top: 32px;
 	padding-bottom: 32px;
 }
+.py-64{
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
 .mb-4{
 	margin-bottom: 4px;
+}
+.mb-8{
+	margin-bottom: 8px;
 }
 .mb-12{
 	margin-bottom: 12px;
@@ -149,8 +189,14 @@ body{
 .ml-12{
 	margin-left: 12px;
 }
+.ml-24{
+	margin-left: 24px;
+}
 .mb-24{
 	margin-bottom: 24px;
+}
+.mb-36{
+	margin-bottom: 36px;
 }
 .mb-48{
 	margin-bottom: 48px;
@@ -158,22 +204,40 @@ body{
 .ml-8{
 	margin-left: 8px;
 }
+.mb-64{
+	margin-bottom: 64px;
+}
 .ml-48{
 	margin-left: 48px;
 }
 .ml-40{
 	margin-left: 40px;
 }
+.h2{
+	font-size: 32px;
+	font-weight: 700;
+}
 .h3{
     font-size: 28px;
 	font-weight: 700;
     color: var(--neutral-900);
 }
+.h4{
+	font-size: 24px;
+	font-weight: 700;
+}
+.h5{
+	font-size: 20px;
+	font-weight: 700;
+}
 .h6{
 	font-size: 16px;
-	line-height: 1.2;
-	letter-spacing: 0.05em;
 	font-weight: 700;
+}
+.fz-sm{
+	font-size: 14px;
+	line-height: 1.5;
+	font-weight: 400;
 }
 .btn{
 	border-radius: 4px;
@@ -185,6 +249,27 @@ body{
 	letter-spacing: 0.05em;
 	cursor: pointer;
 	border: none;
+}
+.light{
+	color:var(--neutral);
+	background-color: var(--neutral-900);
+}
+/* 商品圖片列表 */
+.product-row{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -4px;
+	margin-right: -4px;
+}
+.product-col{
+	width: calc(100% / 12);
+	padding-left: 4px;
+	padding-right: 4px;
+}
+.product-col-6{
+	width: calc(100% / 12 * 6);
+	padding-left: 4px;
+	padding-right: 4px;
 }
 /* 頁面 */
 .nav{
@@ -203,7 +288,7 @@ body{
 	font-weight: 500;
 }
 .bread-link{
-	color:var(--Neutral-600);
+	color:var(--neutral-600);
 }
 .menu .actived{
 	color:var(--primary-400);
