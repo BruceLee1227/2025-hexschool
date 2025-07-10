@@ -53,6 +53,7 @@ table {
 /* 顏色 */
 :root{
     --primary-400:#57A203;
+	--primary-300:#C0FA73;
     --primary-100:#F5FEE7;
     --neutral:#FFFFFF;
     --neutral-900:#212529;
@@ -62,10 +63,14 @@ table {
 }
 /* 基本樣式 */
 img{
-    display: block;
+    vertical-align: middle;
+	height: auto;
+	max-width: 100%;
 }
 a{
     text-decoration: none;
+	display: block;
+	color:var(--neutral-900);
 }
 body{
 	font-family: "Noto Sans TC", sans-serif;
@@ -78,16 +83,34 @@ body{
 .row{
 	display: flex;
 	flex-wrap: wrap;
-	padding-left: -12px;
-	padding-right: -12px;
+	margin-right: -12px;
+	margin-left: -12px;
 }
 .col{
 	padding-left: 12px;
 	padding-right: 12px;
 	width: calc(100% / 12);
 }
+.col-2{
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100% / 12 * 2);
+}
+.col-4{
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100% / 12 * 4);
+}
+.col-10{
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100% / 12 *10);
+}
 .d-flex{
     display: flex;
+}
+.jcc{
+	justify-content: center;
 }
 .jcsb{
     justify-content: space-between;
@@ -98,7 +121,99 @@ body{
 .flex-wrap{
 	flex-wrap: wrap;
 }
+.py-8{
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.py-12{
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.py-16{
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.py-32{
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+.mb-4{
+	margin-bottom: 4px;
+}
+.mb-12{
+	margin-bottom: 12px;
+}
+.mb-16{
+	margin-bottom: 16px;
+}
+.ml-12{
+	margin-left: 12px;
+}
+.mb-24{
+	margin-bottom: 24px;
+}
+.mb-48{
+	margin-bottom: 48px;
+}
+.ml-8{
+	margin-left: 8px;
+}
+.ml-48{
+	margin-left: 48px;
+}
+.ml-40{
+	margin-left: 40px;
+}
+.h3{
+    font-size: 28px;
+	font-weight: 700;
+    color: var(--neutral-900);
+}
+.h6{
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: 0.05em;
+	font-weight: 700;
+}
+.btn{
+	border-radius: 4px;
+	background-color: transparent;
+	padding: 12px 24px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+	cursor: pointer;
+	border: none;
+}
 /* 頁面 */
 .nav{
-    padding: 16px 0;
+	background-color: var(--neutral);
+}
+/* 元素 */
+.bread-divider+.bread-divider::before{
+	content: "/";
+	padding-left: 12px;
+	padding-right: 12px;
+	color: var(--neutral-300);
+	font-weight: 700;
+}
+.bread-divider{
+	display: flex;
+	font-weight: 500;
+}
+.bread-link{
+	color:var(--Neutral-600);
+}
+.menu .actived{
+	color:var(--primary-400);
+}
+.pagelist-btn{
+	padding: 8px 15px;
+	font-weight: 400;
+	color: var(--neutral-900);
+}
+.pagebutton-list .actived{
+	background-color: var(--primary-300);
+	font-weight: 500;
 }
