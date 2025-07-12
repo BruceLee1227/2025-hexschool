@@ -1,9 +1,8 @@
-/* 通用樣式 */
+/* 容器 */
 .container{
     margin: 0 auto;
     max-width: 1296px;
 }
-/* 容器 */
 .row{
 	display: flex;
 	flex-wrap: wrap;
@@ -65,6 +64,10 @@
 .py-32{
 	padding-top: 32px;
 	padding-bottom: 32px;
+}
+.py-48{
+	padding-top: 48px;
+	padding-bottom: 48px;
 }
 .py-64{
 	padding-top: 64px;
