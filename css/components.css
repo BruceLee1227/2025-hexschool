@@ -107,3 +107,6 @@
 .danger{
 	color:var(--danger-300);
 }
+.line{
+	border: 1px solid var(--neutral-300);
+}
