@@ -1,75 +1,15 @@
-/* 引入字體 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
-/* 引入ICON */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
-/* CSS分類 */
-@import 'reset.css';
 @import 'variables.css';
-@import 'base.css';
 @import 'utils.css';
 @import 'components.css';
-.primary-color{
-	background-color: var(--neutral-200);
+
+a{
+    text-decoration: none;
+    color:var(--neutral-900);
 }
-.del{
-	color: var(--neutral-500);
+.bg-primary-200{
+	background-color: var(--primary-200);
 }
-/* 商品圖片列表 */
-.product-row{
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: -4px;
-	margin-right: -4px;
-}
-.product-col{
-	width: calc(100% / 12);
-	padding-left: 4px;
-	padding-right: 4px;
-}
-.product-col-6{
-	width: calc(100% / 12 * 6);
-	padding-left: 4px;
-	padding-right: 4px;
-}
-.product-color{
-	width: 64px;
-	text-align: center;
-	color: var(--neutral-600);
-}
-/* 頁面 */
-.nav{
-	background-color: var(--neutral);
-}
-.instructions-color{
-	color:var(--neutral-600);
-}
-/* 麵包屑切換鈕 */
-.bread-divider+.bread-divider::before{
-	content: "/";
-	padding-left: 12px;
-	padding-right: 12px;
-	color: var(--neutral-300);
-	font-weight: 700;
-}
-.bread-divider{
-	display: flex;
-	font-weight: 500;
-}
-.bread-link{
-	color:var(--neutral-600);
-}
-.bread-selected{
-	color:var(--neutral-900);
-}
-.menu .actived{
-	color:var(--primary-400);
-}
-.pagelist-btn{
-	padding: 8px 15px;
-	font-weight: 400;
-	color: var(--neutral-900);
-}
-.pagebutton-list .actived{
-	background-color: var(--primary-300);
-	font-weight: 500;
+
+@media(max-width:376px){
+    
 }
