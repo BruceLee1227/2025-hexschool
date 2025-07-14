@@ -6,50 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 /* 引入ICON */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import 'reset.css';
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 /* 基本樣式 */
 *,
@@ -69,11 +27,11 @@ a {
 :root{
     --primary-400:#57A203;
     --primary-100:#F5FEE7;
-    --neutral:#FFFFFF;
+    --neutral-white:#FFFFFF;
     --neutral-900:#212529;
     --neutral-300:#DEE2E6;
     --neutral-100:#F8F9FA;
-    --Neutral-600:#6C757D;
+    --neutral-600:#6C757D;
 }
 
 body{
@@ -88,11 +46,11 @@ body{
     font-size: 40px;
     line-height: 1.2;
     font-weight: 700;
-    color: var(--neutral);
+    color: var(--neutral-white);
 }
 .h3{
     font-size: 28px;
-    color: var(--neutral);
+    color: var(--neutral-white);
 }
 .h4{
     font-size: 24px;
@@ -120,8 +78,11 @@ body{
     width: 856px;
     margin: 0 auto;
 }
-.px-8{
+.pe-8{
     padding-right: 8px;
+}
+.mb-4{
+    margin-bottom: 4px;
 }
 .mb-12{
     margin-bottom: 12px;
@@ -138,19 +99,13 @@ body{
 .mb-64{
     margin-bottom: 64px;
 }
-.mb-4{
-    margin-bottom: 4px;
-}
-.mb-12{
-    margin-bottom: 12px;
-}
 .hr{
     color: var(--neutral-300);
 }
-.fz-md{
+/* .fz-md{
     line-height: 1.5;
     font-weight: 400;
-}
+} */
 .img{
     width: 100%;
     display: block;
@@ -164,7 +119,7 @@ body{
     background-position: center;
     background-size: cover;
 }
-.ent-title{
+.eng-title{
     font-size: 28px;
 }
 .slogan{
@@ -192,16 +147,16 @@ body{
 .footer{
     background-color: var(--neutral-100);
     padding: 64px 0;
-    color: var(--Neutral-600);
+    color: var(--neutral-600);
 }
 .intro img{
     width: 1076px;
     margin-left: -110px;
     margin-right: -110px;
 }
-.intro .h4{
+/* .intro .h4{
     color: var(--neutral-900);
-}
+} */
 .container .h4{
     font-weight: bold;
 }
@@ -214,3 +169,24 @@ body{
     vertical-align: bottom;
 }
 
+/* - 第 72 行 --neutral 建議改為 --neutral-white，讓語意更明確。 OK
+
+- .h4 的設定可以加上 font-weight 的設定，就不需要另外用 .container 設定。.intro .h4 的設定也可以移除。
+
+- .px-8 應為 .pr-8 或 .pe-8。 OK
+
+- margin-bottom 的通用設定建議依照數字大小順序排列 。OK
+
+- .fz-md 可以移除。line-height: 1.5; 在 body 上已經有設定，font-weight: 400; 為預設屬性，不需要另外設定。且 .fz 建議用來設定字型大小， .fw 設定字重。 OK
+
+- 第 154 行 .img 在 HTML 中沒有看到套用。
+
+- 第 167 行的 .ent-title 應為 .eng-title，所以目前畫面上沒有套用到該設定。已更改
+
+- .brand-history 建議改為 .brand-history-list 讓語意更清晰。
+
+- .text-style 可以改為套用 .h5，並另外設定顏色。且目前 class 的語意不清晰。
+
+- a 標籤可以加上 hover 效果。
+
+- .header 上不需要加上 .mb-24，外層的 .py-64 已推出高度。品牌小故事的外層也是。 OK */
